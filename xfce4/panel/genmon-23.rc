@@ -1,0 +1,6 @@
+Command=/opt/vpnbash.sh
+UseLabel=0
+Text=(genmon)
+UpdatePeriod=5000
+Font=Cantarell 11
+
