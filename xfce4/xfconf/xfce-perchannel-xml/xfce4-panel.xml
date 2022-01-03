@@ -5,10 +5,7 @@
   <property name="panels" type="array">
     <value type="int" value="1"/>
     <property name="panel-1" type="empty">
-      <property name="position" type="string" value="p=6;x=0;y=0"/>
       <property name="length" type="uint" value="100"/>
-      <property name="position-locked" type="bool" value="true"/>
-      <property name="size" type="uint" value="30"/>
       <property name="plugin-ids" type="array">
         <value type="int" value="1"/>
         <value type="int" value="2"/>
@@ -36,36 +33,13 @@
         <value type="int" value="20"/>
         <value type="int" value="21"/>
       </property>
+      <property name="position" type="string" value="p=6;x=0;y=0"/>
+      <property name="position-locked" type="bool" value="true"/>
+      <property name="size" type="uint" value="30"/>
     </property>
   </property>
   <property name="plugins" type="empty">
     <property name="plugin-1" type="string" value="whiskermenu"/>
-    <property name="plugin-2" type="string" value="separator">
-      <property name="style" type="uint" value="0"/>
-    </property>
-    <property name="plugin-3" type="string" value="separator"/>
-    <property name="plugin-4" type="string" value="showdesktop"/>
-    <property name="plugin-5" type="string" value="directorymenu">
-      <property name="icon-name" type="string" value="system-file-manager"/>
-      <property name="base-directory" type="string" value="/home/vagrant"/>
-    </property>
-    <property name="plugin-6" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="16412244635.desktop"/>
-      </property>
-    </property>
-    <property name="plugin-7" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="16412204182.desktop"/>
-      </property>
-    </property>
-    <property name="plugin-8" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="16412244856.desktop"/>
-      </property>
-      <property name="move-first" type="bool" value="true"/>
-    </property>
-    <property name="plugin-9" type="string" value="separator"/>
     <property name="plugin-10" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
     </property>
@@ -74,9 +48,9 @@
       <property name="style" type="uint" value="0"/>
     </property>
     <property name="plugin-13" type="string" value="tasklist">
-      <property name="show-handle" type="bool" value="false"/>
-      <property name="middle-click" type="uint" value="1"/>
       <property name="grouping" type="uint" value="1"/>
+      <property name="middle-click" type="uint" value="1"/>
+      <property name="show-handle" type="bool" value="false"/>
     </property>
     <property name="plugin-14" type="string" value="separator">
       <property name="expand" type="bool" value="true"/>
@@ -86,18 +60,21 @@
       <property name="digital-format" type="string" value="%I:%M %p"/>
     </property>
     <property name="plugin-16" type="string" value="systray">
-      <property name="size-max" type="uint" value="22"/>
-      <property name="square-icons" type="bool" value="true"/>
-      <property name="symbolic-icons" type="bool" value="true"/>
       <property name="known-legacy-items" type="array">
         <value type="string" value="networkmanager applet"/>
       </property>
+      <property name="size-max" type="uint" value="22"/>
+      <property name="square-icons" type="bool" value="true"/>
+      <property name="symbolic-icons" type="bool" value="true"/>
     </property>
     <property name="plugin-17" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
     </property>
     <property name="plugin-18" type="string" value="notification-plugin"/>
     <property name="plugin-19" type="string" value="power-manager-plugin"/>
+    <property name="plugin-2" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+    </property>
     <property name="plugin-20" type="string" value="separator"/>
     <property name="plugin-21" type="string" value="actions">
       <property name="appearance" type="uint" value="0"/>
@@ -120,5 +97,28 @@
     <property name="plugin-23" type="string" value="genmon"/>
     <property name="plugin-24" type="string" value="separator"/>
     <property name="plugin-25" type="string" value="cpugraph"/>
+    <property name="plugin-3" type="string" value="separator"/>
+    <property name="plugin-4" type="string" value="showdesktop"/>
+    <property name="plugin-5" type="string" value="directorymenu">
+      <property name="base-directory" type="string" value="/home/vagrant"/>
+      <property name="icon-name" type="string" value="system-file-manager"/>
+    </property>
+    <property name="plugin-6" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="16412244635.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-7" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="16412204182.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-8" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="16412244856.desktop"/>
+      </property>
+      <property name="move-first" type="bool" value="true"/>
+    </property>
+    <property name="plugin-9" type="string" value="separator"/>
   </property>
 </channel>
