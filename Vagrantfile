@@ -82,18 +82,20 @@ Vagrant.configure("2") do |config|
   # SHELL
   
   config.vm.provision "file", source: "./vpnbash.sh", destination: "~/vpnbash.sh"
+  config.vm.provision "file", source: "./.tmux.conf", destination: "~/.tmux.conf"
 
   config.vm.synced_folder "./xfce4", "/home/vagrant/.config/xfce4"
 
   config.vm.provision "shell", privileged: true, inline: <<-SHELL
     
     DEBIAN_FRONTEND=noninteractive apt update
-    DEBIAN_FRONTEND=noninteractive apt install -y terminator code-oss
+    DEBIAN_FRONTEND=noninteractive apt install -y terminator code-oss xclip gobuster seclists
     
     cp /home/vagrant/vpnbash.sh /opt/vpnbash.sh
     chmod 0755 /opt/vpnbash.sh
     rm -f /home/vagrant/vpnbash.sh
 
+    git clone https://github.com/carlospolop/PEASS-ng.git /opt/PEASS-ng
   SHELL
   
   config.vm.hostname = "kali"
