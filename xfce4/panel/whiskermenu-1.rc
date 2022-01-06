@@ -1,5 +1,5 @@
 favorites=xfce4-terminal-emulator.desktop,root-terminal.desktop,xfce4-file-manager.desktop,xfce-text-editor.desktop,xfce4-web-browser.desktop,kali-www.desktop,kali-docs.desktop,kali-bugs.desktop,offsec-training.desktop,exploit-database.desktop,vulnhub.desktop
-recent=xfce-settings-manager.desktop,nm-connection-editor.desktop,kali-undercover.desktop,xfce4-terminal-emulator.desktop
+recent=xfce-wm-settings.desktop,xfce-settings-manager.desktop,nm-connection-editor.desktop,kali-undercover.desktop,xfce4-terminal-emulator.desktop
 button-icon=kali-panel-menu
 button-single-row=false
 show-button-title=false
@@ -21,8 +21,8 @@ position-commands-alternate=false
 position-categories-alternate=true
 stay-on-focus-out=false
 confirm-session-command=true
-menu-width=605
-menu-height=665
+menu-width=1718
+menu-height=995
 menu-opacity=100
 command-settings=xfce4-settings-manager
 show-command-settings=true
